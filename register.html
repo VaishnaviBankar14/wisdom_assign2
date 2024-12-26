@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#Explore">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="register.html" class="active">Learn More and Register</a>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2>Registration Form</h2>
+        <form action="submit_booking.php" method="POST">
+            <label for="fname">User Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="First name" required>
+            <input type="text" id="mname" name="mname" placeholder="Middle name">
+            <input type="text" id="lname" name="lname" placeholder="Last name" required><br><br>
+
+            <label for="bday">Date Of Birth:</label>
+            <input type="date" id="bday" name="bday" required><br><br>
+
+            <label for="mobile">Mobile No:</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Your mobile number" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Your address" required><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Your city" required><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree with the terms and conditions.</label><br><br>
+
+            <button type="submit">Book Your Seat</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nature Explore. All Rights Reserved.</p>
+        <a href="#top">Go To Home ☝</a>
+    </footer>
+</body>
+</html>
